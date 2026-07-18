@@ -19,7 +19,8 @@
         "redhat.vscode-yaml",
         "github.vscode-github-actions",
         "humao.rest-client",
-        "cweijan.vscode-database-client2"
+        "cweijan.vscode-database-client2",
+        "anthropic.claude-code"
       ],
       "settings": {
         "editor.formatOnSave": true,

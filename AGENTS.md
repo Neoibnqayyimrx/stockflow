@@ -30,7 +30,7 @@ out loud.
 ## 3. Technology stack (agreed — do not substitute)
 
 - **Language/Runtime:** Kotlin 2.x on JDK 21.
-- **Framework:** Spring Boot 3.3+ — Spring Web, Spring Data JPA, Bean Validation (Jakarta).
+- **Framework:** Spring Boot 4.1.x (Spring Boot 3.3 was requested but Initializr no longer offers it — see BUILD_LOG.md P00) — Spring Web, Spring Data JPA, Bean Validation (Jakarta). Note: starter artifact names and test-starter layout changed from the 3.x line; Jackson 3 is default (tools.jackson.module group for the Kotlin module, not com.fasterxml.jackson.module).
 - **Build:** Gradle with Kotlin DSL (`build.gradle.kts`).
 - **Database:** PostgreSQL 16. Local via docker-compose; production on **Cloud SQL**.
 - **Migrations:** **Flyway** (versioned SQL in `src/main/resources/db/migration`).
@@ -107,7 +107,7 @@ PENDING→CONFIRMED, PENDING→CANCELLED, CONFIRMED→SHIPPED, CONFIRMED→CANCE
 
 ## 7. Build status (update as you go)
 
-- [ ] P00 — Repo scaffold, Gradle, docker-compose Postgres, health endpoint, CI (test on push)
+- [x] P00 — Repo scaffold, Gradle, docker-compose Postgres, health endpoint, CI (test on push)
 - [ ] P01 — Data model: entities, Flyway V1, repositories
 - [ ] P02 — CRUD APIs: suppliers + products, DTOs, validation, pagination, error handling, OpenAPI
 - [ ] P03 — Orders: placement with transactional stock reservation, status transitions, cancel restores stock

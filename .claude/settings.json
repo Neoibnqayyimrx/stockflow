@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -version)",
+      "Bash(docker --version)",
+      "Bash(./gradlew dependencies *)",
+      "Bash(./gradlew compileKotlin compileTestKotlin ktlintCheck --offline)",
+      "Bash(docker compose *)",
+      "Bash(./gradlew compileKotlin compileTestKotlin ktlintCheck)",
+      "Bash(env)"
+    ]
+  }
+}
